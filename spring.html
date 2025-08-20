@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spring Collection - ModernShop</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            background: url('https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.25);
+            z-index: -1;
+        }
+        main.container {
+            max-width: 900px;
+            margin: 120px auto 2rem;
+            padding: 2rem;
+            background: rgba(255,255,255,0.96);
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.09);
+            text-align: center;
+            overflow: hidden;
+            padding-bottom: 1rem;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+        }
+        .product-card img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+        .product-name {
+            font-weight: 600;
+            margin: 1rem 0 0.5rem;
+            color: #2c3e50;
+        }
+        .product-price {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .product-actions {
+            padding: 1rem 0.5rem 0 0.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .add-fav-btn, .add-cart-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.93rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+        .add-fav-btn {
+            background: #ff6b8a;
+            color: white;
+        }
+        .add-fav-btn:hover {
+            background: #ff4757;
+        }
+        .add-cart-btn {
+            background: #e74c3c;
+            color: white;
+        }
+        .add-cart-btn:hover {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">...<!-- same header as before --></header>
+    <main class="container">
+        <h1 class="section-title">Spring Collection</h1>
+        <div class="products-grid">
+            <div class="product-card" data-product-id="spring-dress-01">
+                <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80" alt="Floral Dress" />
+                <h3 class="product-name">Floral Dress</h3>
+                <div class="product-price">$59.99</div>
+                <div class="product-actions">
+                    <button class="add-fav-btn"><i class="fas fa-heart"></i> Add to Favorites</button>
+                    <button class="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card" data-product-id="spring-jacket-01">
+                <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=600&q=80" alt="Light Jacket" />
+                <h3 class="product-name">Light Jacket</h3>
+                <div class="product-price">$89.99</div>
+                <div class="product-actions">
+                    <button class="add-fav-btn"><i class="fas fa-heart"></i> Add to Favorites</button>
+                    <button class="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card" data-product-id="spring-scarf-01">
+                <img src="https://images.unsplash.com/photo-1520962917058-b2e0544c306a?auto=format&fit=crop&w=600&q=80" alt="Pastel Scarf" />
+                <h3 class="product-name">Pastel Scarf</h3>
+                <div class="product-price">$19.99</div>
+                <div class="product-actions">
+                    <button class="add-fav-btn"><i class="fas fa-heart"></i> Add to Favorites</button>
+                    <button class="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

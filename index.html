@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernShop - Premium Fashion & Lifestyle</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">ModernShop</a>
+
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="products.html#all-products">Products</a></li>
+                <li><a href="collections.html#collections">Collections</a></li>
+                <li><a href="about.html#about">About</a></li>
+                <li><a href="contact.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <div class="nav-icons">
+                    <a href="account.html"><i class="fas fa-user"></i></a>
+                    <a href="favorites.html"><i class="fas fa-heart"></i></a>
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;">
+        <div class="hero-content">
+            <h1>Discover Your Perfect Style</h1>
+            <p>Premium fashion and lifestyle products curated just for you</p>
+
+            <div>
+                <a href="#products" class="cta-button">Shop Now</a>
+                <a href="collections.html#collections" class="cta-button cta-secondary">View Collections</a>
+            </div>
+
+            <div class="trust-indicators">
+                <div class="trust-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>Free Shipping</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-undo"></i>
+                    <span>30-Day Returns</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Secure Payment</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-star"></i>
+                    <span>4.8/5 Reviews</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Featured Products</h2>
+
+            <div class="product-filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">New Arrivals</button>
+                <button class="filter-btn">Best Sellers</button>
+                <button class="filter-btn">Sale</button>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card animate-on-scroll">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80" alt="Premium Cotton T-Shirt" loading="lazy">
+                        <div class="product-overlay">
+                            <a href="#" class="quick-view">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Cotton T-Shirt</h3>
+                        <div class="product-price">$29.99</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card animate-on-scroll">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80" alt="Designer Jeans" loading="lazy">
+                        <div class="product-overlay">
+                            <a href="#" class="quick-view">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Designer Jeans</h3>
+                        <div class="product-price">$79.99</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card animate-on-scroll">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Casual Sneakers" loading="lazy">
+                        <div class="product-overlay">
+                            <a href="#" class="quick-view">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Casual Sneakers</h3>
+                        <div class="product-price">$89.99</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card animate-on-scroll">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1574180045827-681f8a1a9622?auto=format&fit=crop&w=600&q=80" alt="Leather Jacket" loading="lazy">
+                        <div class="product-overlay">
+                            <a href="#" class="quick-view">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Leather Jacket</h3>
+                        <div class="product-price">$199.99</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3 class="feature-title">Free Shipping</h3>
+                    <p class="feature-description">Free shipping on all orders over $50. Fast and reliable delivery to your doorstep.</p>
+                </div>
+
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3 class="feature-title">Easy Returns</h3>
+                    <p class="feature-description">30-day hassle-free returns. Not satisfied? Send it back for a full refund.</p>
+                </div>
+
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-title">24/7 Support</h3>
+                    <p class="feature-description">Our customer service team is available around the clock to help you.</p>
+                </div>
+
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="feature-title">Premium Quality</h3>
+                    <p class="feature-description">We source only the finest materials and work with trusted manufacturers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="reviews">
+    <div class="container">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-rating">
+                    <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="review-text">“ModernShop made shopping so easy. Fast delivery and the quality exceeded my expectations!”</p>
+                <div class="review-author">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer photo">
+                    <span>Priya R.</span>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-rating">
+                    <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">“Fantastic collections and amazing support. I felt confident buying online for the first time!”</p>
+                <div class="review-author">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer photo">
+                    <span>Rahul S.</span>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-rating">
+                    <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">“I love the home decor range. The lamp and wall art completely changed my living room.”</p>
+                <div class="review-author">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer photo">
+                    <span>Anika M.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="container">
+            <h3>Stay Updated</h3>
+            <p>Subscribe to our newsletter and get 10% off your first order</p>
+
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+
+            <div class="security-badges">
+                <div class="security-badge">
+                    <i class="fab fa-cc-visa"></i>
+                    <span>Visa</span>
+                </div>
+                <div class="security-badge">
+                    <i class="fab fa-cc-mastercard"></i>
+                    <span>Mastercard</span>
+                </div>
+                <div class="security-badge">
+                    <i class="fab fa-paypal"></i>
+                    <span>PayPal</span>
+                </div>
+                <div class="security-badge">
+                    <i class="fas fa-lock"></i>
+                    <span>SSL Secure</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ModernShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

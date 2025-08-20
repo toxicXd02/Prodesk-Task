@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - ModernShop</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        main.container {
+            max-width: 900px;
+            margin: 120px auto 2rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        h1.section-title {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+        }
+        .empty-message {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            padding: 5rem 1rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+    <nav class="nav-container">
+        <a href="index.html" class="logo">ModernShop</a>
+        <ul class="nav-menu">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="products.html#all-products">Products</a></li>
+            <li><a href="collections.html#collections">Collections</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="account.html"><i class="fas fa-user"></i></a>
+            <a href="favorites.html"><i class="fas fa-heart"></i></a>
+            <a href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+    <main class="container">
+        <h1 class="section-title">My Cart</h1>
+        <div class="empty-message">Your shopping cart is empty.</div>
+    </main>
+</body>
+</html>
