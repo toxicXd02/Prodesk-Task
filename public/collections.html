@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections - ModernShop</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">ModernShop</a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="products.html#all-products">Products</a></li>
+                <li><a href="collections.html#collections">Collections</a></li>
+                <li><a href="about.html#about">About</a></li>
+                <li><a href="contact.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search collections...">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <div class="nav-icons">
+                    <a href="account.html"><i class="fas fa-user"></i></a>
+                    <a href="favorites.html"><i class="fas fa-heart"></i></a>
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="section-title" id="collections">Collections</h1>
+
+        <div class="collections-grid">
+            <a href="spring.html" class="collection-card">
+                <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=600&q=80" alt="Spring Collection" loading="lazy">
+                <h3 class="collection-name">Spring Collection</h3>
+                <p>Fresh new styles for the spring season</p>
+            </a>
+            <a href="summer.html" class="collection-card">
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80" alt="Summer Collection" loading="lazy">
+                <h3 class="collection-name">Summer Collection</h3>
+                <p>Light and breezy outfits for warm days</p>
+            </a>
+            <a href="homedecor.html" class="collection-card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Home Decor Collection" loading="lazy">
+                <h3 class="collection-name">Home Decor</h3>
+                <p>Elegant pieces to beautify your living space</p>
+            </a>
+            <a href="tech.html" class="collection-card">
+                <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=600&q=80" alt="Tech Gadgets Collection" loading="lazy">
+                <h3 class="collection-name">Tech Gadgets</h3>
+                <p>Latest and greatest in technology and accessories</p>
+            </a>
+            <a href="winter.html" class="collection-card">
+                <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=600&q=80" alt="Winter Collection" loading="lazy">
+                <h3 class="collection-name">Winter Collection</h3>
+                <p>Stay warm and stylish during cold months</p>
+            </a>
+        </div>
+    </main>
+
+<style>
+.container {
+    max-width: 1200px;
+    margin: 100px auto 2rem;
+    padding: 0 2rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.collection-card {
+    display: block;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.collection-card:hover {
+    transform: translateY(-10px);
+}
+
+.collection-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.collection-name {
+    font-weight: 600;
+    margin: 1rem 0 0.5rem;
+    color: #2c3e50;
+}
+
+.collection-card p {
+    color: #666;
+    margin: 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .collections-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+</style>
+
+<script src="script.js"></script>
+
+</body>
+</html>

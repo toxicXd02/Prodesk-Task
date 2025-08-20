@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ModernShop</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        main.container {
+            margin-top: 120px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem;
+            border-radius: 15px;
+            background: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            box-shadow: 0 8px 24px rgb(0 0 0 / 0.2);
+        }
+        main.container p, main.container ul {
+            color: #212121;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body class="about-page">
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">ModernShop</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="products.html#all-products">Products</a></li>
+                <li><a href="collections.html#collections">Collections</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search collections...">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <div class="nav-icons">
+                    <a href="account.html"><i class="fas fa-user"></i></a>
+                    <a href="favorites.html"><i class="fas fa-heart"></i></a>
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <!-- About Content -->
+    <main class="container">
+        <h1 class="section-title">About ModernShop</h1>
+        <p><b>ModernShop</b> is your go-to destination for curated fashion, home decor, tech gadgets, and lifestyle products. Founded in 2025, our mission is to make modern, high-quality products accessible and affordable for everyone. We source our collections from trusted brands and artisans, blending style, functionality, and value.</p>
+        <ul>
+            <li>✔ Carefully curated collections for every season and lifestyle</li>
+            <li>✔ Fast and free shipping for most items</li>
+            <li>✔ 24/7 responsive customer support</li>
+            <li>✔ Secure shopping and easy returns</li>
+        </ul>
+        <p>Join thousands of happy customers enjoying a seamless and inspiring shopping experience. Thank you for making us your trusted online store for all things modern!</p>
+        <div style="text-align:center; margin-top:2rem;">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=420&q=80" alt="Our Team" style="max-width:420px; width:100%; border-radius:12px;"/>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
